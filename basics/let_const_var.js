@@ -16,7 +16,7 @@
   console.log(age)
 }
 {
-// DO NOT USE THIS... they are not block scoped so not worthy of using.
+// DO NOT USE THIS... they are not block scoped and functional scope..so not worthy of using.
   var gender = "female"
   console.log(gender)
 }
