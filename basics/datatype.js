@@ -75,3 +75,48 @@
 // console.log(Number)
 // const bigNumber = 987654321234567899876543234567890n //bigint just add a 'n' at last
 // console.log(bigNumber)
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------- */
+
+// MEMORY - stack memory and heap memory
+/* 
+primitive types uses stack memory.
+it means when we need the value and change it we get a copy of that value not the original one. so even if we modify it the copied value only changes not the  original one.
+Non-Primitive used heap memory.
+it means when we need the value and change it we get a reference of that value original one. so if we modify it the original value changes.
+*/
+
+
+// STACK MEMORY
+/* This code snippet is demonstrating the concept of memory allocation in JavaScript. Here's what's happening: */
+/* by this example you can understand how the stack memory works we get a copy of the value of name in newname so when we change the value of newname it does not affect the previous defined variable name 's value. */
+let name = 'jaish';
+// let newname = 'jaishree'
+let newname = name
+newname='gopal'
+console.log(name);
+console.log(newname);
+
+// HEAP MEMORY
+/* In this we get the reference of the original value. */
+/* This code snippet is demonstrating how heap memory works in JavaScript. */
+/* This code snippet is creating two objects `person1` and `person2` that initially reference the same
+object in memory. When `person2.gender` is changed to "female", it modifies the original object that
+`person1` is also referencing. This is because objects in JavaScript are reference types, so when
+you assign an object to another variable, you are actually creating a reference to the same object
+in memory. Therefore, changing the object through one reference will reflect the changes in all
+references to that object. */
+let person1 = {
+  age:22,
+  gender:"male",
+  email:"person1@gmail.com",
+}
+console.log(person1)
+let person2 = person1
+person2.gender="female"
+person1.age=44
+console.log(person2)
+console.log(person1)
