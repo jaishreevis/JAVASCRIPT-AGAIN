@@ -26,8 +26,36 @@
 // user.isLoggedIn=true
 // console.log(user)
 
-// Object.freeze(user)//does not changes anything in user object we defined.
+// // Object.freeze(user)//does not changes anything in user object we defined.
 
 // user.isLoggedIn=false
 // console.log(user)
 
+// user.greeting = function(){
+//   console.log(`Hello , ${this.name}... how are you. Your age is ${this["age age"]}.`)
+// }
+// user.greeting();
+
+// to join a object
+// let obj1 = {1:"a",2:"b"}
+// let obj2 = {3:"a",4:"b"}
+// let obj3 = {5:"a",6:"b"}
+// let obj = Object.assign({} , obj1 , obj2 , obj3)
+// console.log(obj)
+// console.log(obj1)
+// console.log(obj2)
+// console.log(obj3)
+// let newobj = {...obj1,...obj2,...obj3}
+// console.log(newobj)
+
+let tinderUser = {
+  id:1,
+  isLoggedIn:true,
+  gender:"male"
+}
+console.log(tinderUser)
+console.log(Object.keys(tinderUser))
+console.log(Object.values(tinderUser))
+console.log(Object.keys(tinderUser).length)
+console.log(Object.entries(tinderUser))
+console.log(tinderUser.hasOwnProperty('isLoggedIn'))
