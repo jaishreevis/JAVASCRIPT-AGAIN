@@ -48,14 +48,14 @@
 // let newobj = {...obj1,...obj2,...obj3}
 // console.log(newobj)
 
-let tinderUser = {
-  id:1,
-  isLoggedIn:true,
-  gender:"male"
-}
-console.log(tinderUser)
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser))
-console.log(Object.keys(tinderUser).length)
-console.log(Object.entries(tinderUser))
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+// let tinderUser = {
+//   id:1,
+//   isLoggedIn:true,
+//   gender:"male"
+// }
+// console.log(tinderUser)
+// console.log(Object.keys(tinderUser))
+// console.log(Object.values(tinderUser))
+// console.log(Object.keys(tinderUser).length)
+// console.log(Object.entries(tinderUser))
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))
