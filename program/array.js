@@ -27,3 +27,12 @@
 // console.log(newArr)
 // console.log(typeof newArr)
 
+// SLICE SPICE
+let arr = [0,1,2,3,4,5,6]
+console.log(arr.slice(1,3))
+console.log("slice--------------",arr)
+console.log(arr.splice(1,3))
+console.log("splice-------------",arr)
+
+/* splice includes the range while slice dont and
+MAIN DIFF is slice does not change the  original arrya while splice manipulates the original array*/
