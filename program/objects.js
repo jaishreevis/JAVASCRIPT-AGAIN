@@ -59,3 +59,17 @@
 // console.log(Object.keys(tinderUser).length)
 // console.log(Object.entries(tinderUser))
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+// console.log(typeof ('9'*3))
+// console.log(4/0)
+
+// const course  ={
+//   coursename : "js",
+//   price : "999",
+//   courseinstructor:"jaish"
+// }
+
+// const {courseinstructor}= course
+// console.log(courseinstructor)
+// const {courseinstructor:instructor}= course
+// console.log(instructor)
